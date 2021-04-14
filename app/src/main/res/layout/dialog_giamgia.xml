@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:background="@color/white"
+    android:layout_height="240dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:background="#FF9800"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true"
+        android:layout_width="match_parent"
+        android:layout_height="26dp">
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:text="Giảm giá"
+            android:layout_marginLeft="3dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Tổng"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <EditText
+            android:enabled="false"
+            android:id="@+id/edttong"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0" />
+    </LinearLayout>
+
+    <TextView
+        android:text="%"
+        android:gravity="center"
+        android:textColor="#3F51B5"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <EditText
+        android:id="@+id/edtphantram"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shadowColor="#3F51B5"
+        android:inputType="number"
+        android:textColorHighlight="#3F51B5"
+        android:text="0"
+        android:gravity="center"
+        android:textColor="#3F51B5"
+         />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+           android:background="#FF9800"
+            android:id="@+id/btnDongYGG"
+            android:text="Đồng ý"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+
+            android:layout_width="80dp"
+            android:layout_height="40dp"/>
+        <Button
+            android:background="@color/white"
+            android:text="Huỷ bỏ"
+            android:textAllCaps="false"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/txtHuyBoGG"
+            android:layout_width="80dp"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

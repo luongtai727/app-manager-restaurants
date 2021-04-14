@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="150dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmenActivity.Fragment_Lef">
+
+    <Button
+        android:id="@+id/btntatca"
+        android:background="@drawable/trongdo"
+        android:layout_marginLeft="10dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+    <Button
+        android:id="@+id/btntrong"
+        android:background="@drawable/tronxanh"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>/>
+
+    <Button
+        android:id="@+id/btncokhach"
+        android:background="@drawable/trontim"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>/>
+
+</LinearLayout>

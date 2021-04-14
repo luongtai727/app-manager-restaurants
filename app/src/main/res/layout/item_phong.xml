@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView app:cardCornerRadius="10dp"
+    android:layout_height="110dp"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_margin="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txttinhtrang"
+            android:text="Nha Hang TNT"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <FrameLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txttenban"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textStyle="bold"
+                android:background="#F8F7F7"
+                android:gravity="center"
+                android:text="10"
+                android:textAllCaps="true"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/txtLoaiBan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="60dp"
+                android:text="adasd"
+                android:textSize="13dp" />
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

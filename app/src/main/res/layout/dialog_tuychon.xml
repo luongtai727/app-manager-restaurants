@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#0000"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:background="@color/purple_500"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtTenMontmp"
+            android:text="asdasdas"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="13dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_baseline_close_24" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnSLtmp"
+        android:background="@drawable/background_dialog"
+        android:text="Thay đổi số lượng, giá"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnGhichutmp"
+        android:text="Topping, Ghi chú"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        android:background="@drawable/background_dialog"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnHuyMontmp"
+        android:text="Huỷ món"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        android:background="@drawable/background_dialog"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnGiamGiatmp"
+        android:text="Giảm giá"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        android:background="@drawable/background_dialog"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView app:cardCornerRadius="6dp"
+    android:layout_marginTop="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:paddingBottom="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtTenMonGH"
+                android:text="asdasdasdasdasd"
+                android:textColor="@color/black"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txtGiaMonGH"
+                android:text="2332432423423"
+                android:layout_marginTop="5dp"
+                android:textColor="#E91E63"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:id="@+id/linearLayoutGhiChuGH"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/iconghichu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/txtGhiChuGH"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutGiamGiaGH"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/iconsale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textColor="#E91E63"
+                    android:id="@+id/txtGiamGiaGH"
+                    android:text="asdasd"
+                    android:gravity="center_vertical"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btnGiamGH"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_tru_foreground"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:id="@+id/txtSoLuong"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:text="111"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/btnTangGH"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_cong_foreground"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

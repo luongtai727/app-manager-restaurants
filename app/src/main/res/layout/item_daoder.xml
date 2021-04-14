@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView app:cardCornerRadius="6dp"
+    android:layout_marginTop="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtSoLuongoder"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="111"
+            android:textColor="@color/purple_700" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtTenMonoder"
+                android:text="asdasdasdasdasd"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_width="224dp"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:id="@+id/linearLayoutGhiChu"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/iconghichu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/txtGhiChuoder"
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutGiamGia"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgbad"
+                    android:src="@drawable/iconsale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textColor="#E91E63"
+                    android:id="@+id/txtGiamGiaoder"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtGiaMonoder"
+            android:text="2332432423423"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:textColor="#E91E63"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

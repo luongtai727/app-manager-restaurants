@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/linearCon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarChiTietBan"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#3F51B5"
+            app:title="asdasd"
+            app:titleTextColor="@color/white"
+            tools:ignore="MissingConstraints" />
+
+        <FrameLayout
+            android:id="@+id/framLayout"
+            android:layout_width="match_parent"
+            android:layout_height="630dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tablayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tabSelectedTextColor="#E91E63"
+                        app:layout_constraintTop_toBottomOf="@+id/toolbarChiTietBan"
+                        tools:ignore="MissingConstraints" />
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <fragment
+                            android:id="@+id/fragment6"
+                            android:name="com.example.appnhanhang.FragmenActivity.Fragment_tmp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </androidx.viewpager.widget.ViewPager>
+                </LinearLayout>
+
+                <fragment
+                    android:id="@+id/fragment2"
+                    android:name="com.example.appnhanhang.FragmenActivity.Fragment_TimKim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+
+            <fragment
+                android:id="@+id/fragmenttmp"
+                android:name="com.example.appnhanhang.FragmenActivity.Fragment_tmp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnLuuOder"
+                android:text="Lưu"
+                android:layout_marginLeft="5dp"
+                android:textAllCaps="false"
+                android:layout_width="130dp"
+                android:background="#8BC34A"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/btnLuuIn"
+                android:text="Lưu và In"
+                android:textAllCaps="false"
+                android:background="#673AB7"
+                android:textColor="@color/white"
+                android:layout_marginLeft="6dp"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/btnThanhToan"
+                android:text="0"
+                android:background="#3F51B5"
+                android:textColor="@color/white"
+                android:layout_marginLeft="6dp"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.andremion.counterfab.CounterFab
+        android:id="@+id/fab"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="20dp"
+        app:fabSize="normal"
+
+        app:layout_anchorGravity="bottom|right|end"
+        android:layout_width="wrap_content"
+        android:layout_height="194dp"
+        app:backgroundTint="@color/purple_500"
+        app:badgeBackgroundColor="#E91E63"
+        app:badgeTextColor="@color/white"
+        android:src="@drawable/ic_action_plus1"
+        app:layout_anchor="@id/linearCon"
+       />
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

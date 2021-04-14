@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frameDSMonAn"
+    android:background="@color/white"
+    tools:context=".FragmenActivity.Fragment_DSMon"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/fragment10"
+        android:name="com.example.appnhanhang.FragmenActivity.Fragment_DanhMucMon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            android:id="@+id/fragment3"
+            android:name="com.example.appnhanhang.FragmenActivity.Fragment_Mon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <View
+            android:id="@+id/viewBottom"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="150dp"
+            android:layout_marginLeft="440dp"
+            android:visibility="invisible"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/imgtmp"
+            android:visibility="invisible"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+    </FrameLayout>
+
+
+</LinearLayout>
